@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Print {
+	Scanner sc = new Scanner(System.in);
     public void PrintChoices() {
     	System.out.println(">1:new employee");
     	System.out.println(">2:show employee");
@@ -15,7 +16,7 @@ public class Print {
     	
     }
     public String ScanNextLine() {
-    	Scanner sc = new Scanner(System.in);
+    	
     	String r = null;
     	for (int i = 0; i < 3; i++) {
     		r = sc.nextLine();
@@ -31,15 +32,12 @@ public class Print {
     		
     		
     		else {
-    			sc.close();
+    			
     	    	return r;
     		}	
     	}
-    	sc.close();
+    	
     	return "None";
-    	
-    	
-    	
     	
     }
 }
