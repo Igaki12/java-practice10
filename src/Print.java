@@ -5,7 +5,7 @@ public class Print {
     	System.out.println(">1:new employee");
     	System.out.println(">2:show employee");
     	System.out.println(">9:finish");
-    	System.out.print("=>(”š‚ğ‘I‘ğ)");
+    	System.out.print("=>(æ•°å­—ã‚’é¸æŠ)");
     	
     }
     public void PrintUserInformation(String strID, String strName, String strTel) {
@@ -20,13 +20,13 @@ public class Print {
     	for (int i = 0; i < 3; i++) {
     		r = sc.nextLine();
     		if (r == null) {
-    			System.out.println("“ü—Í‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ");
+    			System.out.println("æ–‡å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
     		}
     		if (r.contains(",")) {
-    			System.out.println("ƒJƒ“ƒ}i,j‚ğ“ü—Í‚µ‚È‚¢‚Å‚­‚¾‚³‚¢");
+    			System.out.println("ã‚«ãƒ³ãƒï¼ˆ,ï¼‰ã‚’ä½¿ç”¨ã—ãªã„ã§ãã ã•ã„");
     		}
     		if (r.contains(" ")) {
-    			System.out.println("‹ó”’u@v‚ğg—p‚µ‚È‚¢‚Å‚­‚¾‚³‚¢");
+    			System.out.println("ç©ºæ–‡å­—ã€Œã€€ã€ã‚’ä½¿ç”¨ã—ãªã„ã§ãã ã•ã„");
     		}
     		
     		

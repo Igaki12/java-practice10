@@ -3,8 +3,8 @@
 public class Main {
 
 	public static void main(String[] args) {
+		System.out.println(System.getProperty("file.encoding"));
 		Print pr = new Print();
-		Print pr2 = new Print();
 		Filing fl = new Filing();
 		
 		int intChoice = 1;
@@ -14,7 +14,7 @@ public class Main {
 			try {
 				intChoice = Integer.parseInt(strChoice);
 			}catch (NumberFormatException nfe) {
-				System.out.println("”¼Šp”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+				System.out.println("åŠè§’æ•°å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„");
 				continue;
 			}
 			
@@ -22,25 +22,25 @@ public class Main {
 				String submit = "9";
 				while(true)  {
 					System.out.print("=>ID:");
-					String strID = pr2.ScanNextLine();
+					String strID = pr.ScanNextLine();
 					System.out.print("=>name:");
 					String strName = pr.ScanNextLine();
 					System.out.print("=>tel:");
 					String strTel = pr.ScanNextLine();
 					
-					System.out.println("ˆÈ‰º‚Ì“à—e‚Å“o˜^‚µ‚Ü‚·‚©H");
+					System.out.println("ä»¥ä¸‹ã®å†…å®¹ã§ç™»éŒ²ã—ã¾ã™ã‹ï¼Ÿ");
 					pr.PrintUserInformation(strID, strName, strTel);
 					
-					System.out.println("1:“o˜^,9:ƒLƒƒƒ“ƒZƒ‹");
+					System.out.println("1:ç™»éŒ²ï¼Œ9:ã‚­ãƒ£ãƒ³ã‚»ãƒ«");
 				    System.out.print("=>");
 				    submit = pr.ScanNextLine();
 				    if (submit.equals("1")) {
 						fl.WriteList(strID + "," + strName + "," + strTel);
-						System.out.println("“o˜^‚µ‚Ü‚µ‚½");
+						System.out.println("ç™»éŒ²ã—ã¾ã—ãŸ");
 						break;
 					}
 				    else {
-						System.out.println("ƒLƒƒƒ“ƒZƒ‹‚³‚ê‚Ü‚µ‚½");
+						System.out.println("ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã•ã‚Œã¾ã—ãŸ");
 						break;
 					} 
 					
@@ -48,12 +48,12 @@ public class Main {
 				}
 			}
 			if (intChoice == 2) {
-				System.out.println("ˆÈ‰º‚Ì‚æ‚¤‚É“o˜^‚³‚ê‚Ä‚¢‚Ü‚·");
+				System.out.println("ä»¥ä¸‹ã®ã‚ˆã†ã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã™");
 				fl.ReadList();
 				continue;
 			}
 			if (intChoice == 9) {
-				System.out.println("ˆ—‚ğI—¹‚µ‚Ü‚·B");
+				System.out.println("å‡¦ç†ã‚’çµ‚äº†ã—ã¾ã™");
 			}
 			
 			
